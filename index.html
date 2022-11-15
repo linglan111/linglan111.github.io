@@ -38,6 +38,8 @@
   
   
   
+  
+  
   <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.d06d5bd0f3e2d226904dc6ee2e65e89be2a5be701a29950de6a25861686c3fdc5b9afe0380c1f67f3a24e69531f5839ad0bc1212ae351c52b23e912e771e4fd9.css"
     integrity="sha512-0G1b0PPi0iaQTcbuLmXom&#43;KlvnAaKZUN5qJYYWhsP9xbmv4DgMH2fzok5pUx9YOa0LwSEq41HFKyPpEudx5P2Q==" />
   
@@ -352,7 +354,26 @@
         
   
   
-    <article class="max-w-full prose dark:prose-invert">
+    <div style="width: 80%; position: fixed; bottom: 120px; right: -800px;  height: 100px; font-size: 0; line-height: 0;  text-align: right; ">
+    <asp:Button ID="Button2" Style="width: 150px; height: 50px; text-decoration: none;" runat="server" Text="Apply Order" />
+    
+    
+    
+    
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/sakana-widget@2.4.1/lib/sakana.min.css" />
+    <div id="sakana-widget"></div>
+    <script>
+        function initSakanaWidget() {
+            new SakanaWidget().mount('#sakana-widget');
+        }
+    </script>
+    <script async
+            onload="initSakanaWidget()"
+            src="https://cdn.jsdelivr.net/npm/sakana-widget@2.4.1/lib/sakana.min.js"></script>
+</div>
+<article class="max-w-full prose dark:prose-invert">
     <div class="relative">
         <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
         <div class="mx-auto max-w-7xl p-0">
@@ -362,11 +383,9 @@
                     
                     
                     <img class="w-full h-[1000px] object-cover m-0 nozoom" src="/img/IMAGE.jpg">
-                    <div
-                        class="absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+                    <div class="absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
                     </div>
-                    <div
-                        class="opacity-70 absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral dark:to-neutral-800 mix-blend-normal">
+                    <div class="opacity-70 absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral dark:to-neutral-800 mix-blend-normal">
                     </div>
                     
                     
@@ -377,7 +396,7 @@
                     
                     
                     <img class="mb-2 rounded-full h-36 w-36" width="144" height="144"
-                        alt="灵岚linglan" src="/img/blowfish_logo_hud2ebe503dd8a97178fd13741a86fbaf7_75714_288x288_fill_q75_box_smart1.jpg" />
+                         alt="灵岚linglan" src="/img/blowfish_logo_hud2ebe503dd8a97178fd13741a86fbaf7_75714_288x288_fill_q75_box_smart1.jpg" />
                     
                     
                     <h1 class="mb-2 text-4xl font-extrabold text-neutral-800 dark:text-neutral-200">
@@ -394,25 +413,34 @@
                             
                             
                             <a class="px-1 hover:text-primary-400 text-primary-800 dark:text-primary-200" href="mailto:15192050246@163.com" target="_blank"
-                                aria-label="Email" rel="me noopener noreferrer">
+                               aria-label="Email" rel="me noopener noreferrer">
+                                
 
   <span class="relative inline-block align-text-bottom icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
 
   </span>
 
-</a>
+
+                            </a>
                             
                             
                         </div>
                         
                     </div>
+
                     <section class="prose dark:prose-invert"></section>
                 </div>
+
             </div>
+
         </div>
+
     </div>
+    
 </article>
+
+
 <section>
     
 
@@ -479,14 +507,10 @@
 
 
 
-
-
-
-
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-11-10 13:00:41 &#43;0800 CST">10 November 2022</time><span class="px-2 text-primary-500">&middot;</span><span>162 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  <time datetime="2022-11-10 13:00:41 &#43;0800 CST">10 November 2022</time>
   
 
   
@@ -512,6 +536,7 @@
   
   
 </div>
+
 
 
 
@@ -548,58 +573,61 @@
 
         
       </main><footer class="py-10 print:hidden">
-  
-  
+    
+    
     
     <nav class="pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
-      <ul class="flex flex-col list-none sm:flex-row">
-        
-        <li class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
-          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2" href="/tags/"
-            title="Tags">Tags</a>
-        </li>
-        
-      </ul>
+        <ul class="flex flex-col list-none sm:flex-row">
+            
+            <li class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+                <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2" href="/tags/"
+                   title="Tags">Tags</a>
+            </li>
+            
+        </ul>
     </nav>
     
-  
-  <div class="flex items-center justify-between">
-
-    
-    
-    <p class="text-sm text-neutral-500 dark:text-neutral-400">
-      &copy;
-      2022
-      灵岚linglan
-    </p>
     
 
-    
-    
-    <p class="text-xs text-neutral-500 dark:text-neutral-400">
-      
-      
-      由 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+    <div class="flex items-center justify-between">
+
+        
+        
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            &copy;
+            2022
+            灵岚linglan
+        </p>
+        
+
+        
+        
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+            
+            
+            由 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
         href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
         href="https://nunocoracao.github.io/blowfish/" target="_blank" rel="noopener noreferrer">Blowfish</a> 强力驱动
-    </p>
-    
+        </p>
+        
 
-  </div>
-  <script>
+    </div>
+
+    <script>
     
     mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
       margin: 24,
-      background: 'rgba(0,0,0,0.5)',
+      background: 'rgba(0,0,0,0)',
       scrollOffset: 0,
     })
     
-  </script>
-  
-  
-  <script type="text/javascript" src="/js/process.min.2166d3adac1679c00a75161830ab5725d3efc0e3d3f8c2453fb01d0907948436c25f0f8a7ad824322fa22f3f9c85fd4d0a1d5c856f53b862157da25a57dc3d52.js" integrity="sha512-IWbTrawWecAKdRYYMKtXJdPvwOPT&#43;MJFP7AdCQeUhDbCXw&#43;KetgkMi&#43;iLz&#43;chf1NCh1chW9TuGIVfaJaV9w9Ug=="></script>
-  
-  
+    </script>
+    
+    
+    <script type="text/javascript" src="/js/process.min.2166d3adac1679c00a75161830ab5725d3efc0e3d3f8c2453fb01d0907948436c25f0f8a7ad824322fa22f3f9c85fd4d0a1d5c856f53b862157da25a57dc3d52.js" integrity="sha512-IWbTrawWecAKdRYYMKtXJdPvwOPT&#43;MJFP7AdCQeUhDbCXw&#43;KetgkMi&#43;iLz&#43;chf1NCh1chW9TuGIVfaJaV9w9Ug=="></script>
+    
+    
+
 </footer><div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
